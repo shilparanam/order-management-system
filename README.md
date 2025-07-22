@@ -42,7 +42,7 @@ A Spring Boot RESTful service for managing orders and customers with comprehensi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/order-management-system.git
+git clone https://github.com/shilparanam/order-management-system.git
 cd order-management-system
 ```
 
@@ -87,6 +87,10 @@ docker-compose up -d app
 - Keycloak Admin Console: http://localhost:8180/auth/admin (admin/admin)
 
 ### Building and Running Manually
+Pre requiste - SET JAVA_HOME  and ensure the path is SET
+Example = 
+$env:JAVA_HOME="C:\Program Files\Java\jdk-17"
+$env:Path += ";$env:JAVA_HOME\bin"
 
 1. Build the application:
 
@@ -184,9 +188,9 @@ order-management-system/
 │ │ │ ├── service/ # Business logic
 │ │ │ └── OrderManagementSystemApplication.java
 │ │ └── resources/
-│ │ ├── application.yml # Default configuration
-│ │ ├── application-dev.yml # Development configuration
-│ │ ├── application-docker.yml # Docker configuration
+│ │ ├── application.properties # Default configuration
+│ │ ├── application-dev.properties # Development configuration
+│ │ ├── application-docker.properties # Docker configuration
 │ │ └── data.sql # Sample data
 │ └── test/
 │ └── java/
